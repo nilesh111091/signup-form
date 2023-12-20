@@ -1,0 +1,113 @@
+<!-- 
+
+    Text
+    Textarea
+    Checkbox
+    Radio
+    Select Option (Dropdown)
+    Password
+    File
+    Email
+    Date
+    Submit
+    Number
+    Range
+    Button
+
+-->
+
+<!DOCTYPE html>
+<html lang="en-AR">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Simple Contact Form</title>
+</head>
+<body>
+    <form action="" method="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <table>
+            <tr>
+                <td><label for="firstname">Enter Firstname <span><font color="#543455">*</font></span></label></td>
+                <td><input type="text" name="firstname" id="firstname" required/></td>
+            </tr>
+
+            <tr>
+                <td><label for="lastname">Enter Lastname</label></td>
+                <td><input type="text" name="lastname" id="lastname"  required/></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Enter Email</label></td>
+                <td><input type="email" name="email" placeholder="Enter Email" id="email"  required/> </td>
+            </tr>
+
+            <tr>
+                <td><label for="phone">Enter Phone</label></td>
+                <td><input type="number" name="phone" id="phone"  required/> </td>
+            </tr>
+
+            <tr>
+                <td><label for="birthdate">Enter Birthdate</label></td>
+                <td><input type="date" name="dob" id="dob" placeholder="Enter Birthdate" required/> </td>
+            </tr>
+        </table>
+        </fieldset>
+        <br/>
+        <fieldset>
+            <legend>More Information</legend>
+        <table border="0" width="100%" align="center">
+            
+
+            <tr>
+                <td><label for="message">Enter Message</label></td>
+                <td><textarea name="message" id="message" required></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="gender">Select Gender</label></td>
+                <td>
+                    <input type="radio" name="gender" id="gender" value="male"/> Male
+                    <input type="radio" name="gender" id="gender" value="female"/> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="courses">Select Courses</label></td>
+                <td>
+                    <input type="checkbox" name="course" id="courses" value="html"/> HTML
+                    <input type="checkbox" name="course" id="courses" value="css"/> CSS
+                    <input type="checkbox" name="course" id="courses" value="js"/> Javascript
+                    <input type="checkbox" name="course" id="courses" value="mysql"/> MySql
+                    <input type="checkbox" name="course" id="courses" value="php"/> PHP
+
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="gender">Select Gender</label></td>
+                <td>
+                    <select name="gender">
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="profile">Choose Profile Picture</label></td>
+                <td><input type="file" name="profile_picture" id="profile" accept="image/gif, image/jpeg, image/png"/></td>
+            </tr>
+            <tr> 
+                <td colspan="2"><button type="submit">Submit</button></td>
+            </tr>
+            </table>
+        </fieldset>
+
+            
+</table>
+    </form>
+</body>
+</html>
